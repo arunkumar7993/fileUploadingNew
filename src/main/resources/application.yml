@@ -1,0 +1,49 @@
+cloud:
+  aws:
+    credentials:
+      access-key: 
+      secret-key: 
+    region:
+      static: ap-east-1
+    stack:
+      auto: false
+
+application:
+  bucket:
+    name: bassure
+
+spring:
+  servlet:
+    multipart:
+      enabled: true
+      file-size-threshold: 100KB
+      max-file-size: 50MB
+      max-request-size: 50MB 
+  datasource:
+    url: jdbc:mysql://103.217.220.184:3306/arunkumar
+    username: arun7993
+    password: arun254093
+server:
+  port: 9090
+
+fileupload:
+    message:
+        fileNameNotNull: File Name Should not be Null.
+        fileNameAlreadyExists: is already exists.
+        filePathError: File Path error in Server.
+        notFound: Not found.
+        updatedSuccesfully: Updated Succesfully
+        removedSuccessfully: Removed Successfully.
+        fileNameNotFound: File Name not found in Server.
+        deletedSuccesfully: Deleted Succesfully.
+        message: message
+        bucketNotFound: Bucket Name Not Found.
+        
+    code:
+        sucessCode: 1300
+        filePathNotFoundInServer: 1304
+        fieldValidation: 1310
+        alreadyExeception: 1320
+        fileNotFoundException: 1330
+        filePathNotFoundException: 1350
+        nullPointException: 1360
